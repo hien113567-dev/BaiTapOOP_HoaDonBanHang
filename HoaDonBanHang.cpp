@@ -124,6 +124,7 @@ void HoaDon::In(){
 			<< setw(20) << a[i].soLuong
 			<< setw(20) << a[i].donGia
 			<< setw(20) << a[i].ThanhTien();
+			cout << "\n";
 		tongTien +=a[i].ThanhTien();
 	}
 	cout << left 
