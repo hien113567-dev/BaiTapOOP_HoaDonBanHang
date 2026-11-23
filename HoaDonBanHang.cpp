@@ -66,7 +66,6 @@ double HangHoa::ThanhTien(){
 }
 void HangHoa::NhapSoLieu(){
 	cout << "\nNhap ten hang hoa: ";
-	cin.ignore(1);
 	getline(cin, this->tenHangHoa);
 	//cin >> this->tenHangHoa;
 	cout << "Nhap don vi tinh: ";
@@ -76,6 +75,7 @@ void HangHoa::NhapSoLieu(){
 	cin >> this->soLuong;
 	cout << "Nhap don gia: ";
 	cin >> this->donGia;
+	cin.ignore();
 	//cout << "\nThanh tien: " << this->ThanhTien();
 }
 
@@ -95,6 +95,7 @@ void HoaDon::Nhap(){
 	cout << endl;
 	cout << "\nNhap so mat hang: ";
 	cin >> smh;
+	cin.ignore(1);
 	a = new HangHoa[smh+1];
 	for(int i = 1; i<=smh; ++i){
 		cout << "\nNhap thong tin hang hoa thu " << i << ": ";
@@ -126,13 +127,13 @@ void HoaDon::In(){
 		tongTien +=a[i].ThanhTien();
 	}
 	cout << left 
-	<< setw(10) 
+	<< setw(10) << "" 
 	<< setw(25) << "CONG: " 
 	<< setw(25) << tongTien 
-	<< setw(20) 
-	<< setw(20) 
-	<< setw(20) 
-	<< setw(20);
+	<< setw(20) << "" 
+	<< setw(20) << "" 
+	<< setw(20) << "" 
+	<< setw(20) << "";
 }
 
 int main(){
