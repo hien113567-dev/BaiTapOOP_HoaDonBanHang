@@ -129,7 +129,7 @@ void HoaDon::In(){
 	}
 	cout << left 
 	<< setw(10) << "" 
-	<< setw(25) << "CONG: " 
+	<< setw(25) << fixed << setprecision(2)<< "CONG: " 
 	<< setw(25) << tongTien 
 	<< setw(20) << "" 
 	<< setw(20) << "" 
