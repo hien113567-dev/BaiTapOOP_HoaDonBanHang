@@ -122,8 +122,8 @@ void HoaDon::In(){
 			<< setw(50) << a[i].tenHangHoa 
 			<< setw(20) << a[i].donViTinh 
 			<< setw(20) << a[i].soLuong
-			<< setw(20) << a[i].donGia
-			<< setw(20) << a[i].ThanhTien();
+			<< setw(20) << fixed << setprecision(0) << a[i].donGia
+			<< setw(20) << fixed << setprecision(0) << a[i].ThanhTien();
 			cout << "\n";
 		tongTien +=a[i].ThanhTien();
 	}
